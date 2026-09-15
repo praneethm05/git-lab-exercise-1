@@ -9,16 +9,25 @@
 <body>
   <header class="site-header">
     <div class="logo">StudyHub</div>
+    <nav class="navbar">
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
     <section class="hero">
-      <h1>Welcome to StudyHub</h1>
+      <h1>Learn Smarter with StudyHub</h1>
       <p>Your one place to organise courses, notes and deadlines.</p>
       <button id="cta-btn" class="btn">Get Started</button>
     </section>
 
-    <section class="features">
+    <section id="features" class="features">
       <div class="card">
         <h3>Courses</h3>
         <p>Keep track of every subject you are enrolled in.</p>
@@ -31,6 +40,21 @@
         <h3>Deadlines</h3>
         <p>Never miss an assignment submission again.</p>
       </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About</h2>
+      <p>StudyHub is a dummy project built to practise Git branching, merging and pull requests.</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <form id="contact-form" class="contact-form">
+        <input type="text" id="name" placeholder="Your name" required>
+        <input type="email" id="email" placeholder="Your email" required>
+        <textarea id="message" rows="4" placeholder="Your message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
     </section>
   </main>
 
